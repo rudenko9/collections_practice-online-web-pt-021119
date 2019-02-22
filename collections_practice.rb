@@ -45,8 +45,10 @@ end
    
    def add_s(array)
      array.collect do |word|
-       if word == array[0]
-         word.push("s")
+       if word == array[1]
+         array[1]
+       else 
+         word.insert(-1, "s")
       end
    end
  end
